@@ -1,0 +1,1028 @@
+@font-face {
+    font-family: Nike;
+    src: url(../assets/fuentes/futura-condensed-extra-bold.otf);
+}
+
+.nike__section{
+    
+}
+.nike__header{}
+.nike__header1{
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nike__header1-logos{
+    max-width: 50%;
+    cursor: pointer;
+}
+.nike__jordan-logo{
+    max-height: 1.3em;
+    padding: 0.5em;
+}
+.nike__converse-logo{
+    max-height: 1.3em;
+    padding: 0.5em;
+}
+.nike__header1-texto{}
+.nike__header1-a{
+    padding: 1em;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    &:hover{
+        color: rgb(151, 151, 151);
+    }
+}
+.nike__header2{
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nike__header2-logos{}
+.nike__nike-logo{
+    max-height: 1.3em;
+    padding: 0.5em;
+    cursor: pointer;
+}
+.nike__header2-opciones{
+}
+.nike__header2-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.nike__header2-li{
+    list-style: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: space-between;
+}
+.nike__header2-lidiv{
+    padding-top: 2em;
+    display: none;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    transition: all 1s ease;
+    &.activo{
+        display: flex;
+    }
+}
+.nike__header2-li-ul{
+    font-weight: 400;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.nike__header2-li-ul-li{
+    font-size: 0.9em;
+    list-style: none;
+    font-weight: 100;
+    color: #757575;
+    transition: all 0.5s ease;
+    &:hover{
+        color: black;
+    }
+}
+.nike__header2-compra{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.nike__lupa-logo{
+    max-height: 1.5em;
+    padding: 0.5em;
+    cursor: pointer;
+    &:hover{
+        background-color: #f5f5f5;
+        border-radius: 45%;
+    }
+}
+.nike__corazon-logo{
+    height: 1.5em;
+    max-height: 2em;
+    padding: 0.5em;
+    cursor: pointer;
+    &:hover{
+        background-color: #f5f5f5;
+        border-radius: 45%;
+    }
+}
+.nike__bolsa-logo{
+    height: 1.5em;
+    max-height: 2em;
+    padding: 0.5em;
+    cursor: pointer;
+    &:hover{
+        background-color: #f5f5f5;
+        border-radius: 45%;
+    }
+}
+.nike__menu-logo{
+    display: none;
+    height: 1.4em;
+    max-height: 2em;
+    padding: 0.5em;
+    cursor: pointer;
+    &:hover{
+        background-color: #f5f5f5;
+        border-radius: 45%;
+    }
+}
+.nike__menu-desplegable{
+    width: 0em;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: all 0.25s ease;
+    overflow: hidden;
+    &.activo{
+        overflow: visible;
+        width: 35%;
+    }
+}
+.nike__desplegable-wrapper{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items:flex-end;
+}
+.nike__desplegable-cierre{
+    font-size: 0.75em;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.nike__desplegable-ul{
+    width: 100%;
+    padding: 0em;
+    margin: 0em;
+}
+.nike__desplegable-li{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.nike__desplegable-p{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 0.6em;
+}
+.nike__desplegable-iconos{
+    width: 100%;
+    padding-top: 2em;
+}
+.nike__desplegable-marcas{
+    padding-top: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+}
+.nike__desplegable-marcas-img{
+    max-height: 1.7em;
+}
+.nike__desplegable-marcas-p{
+    padding: 0em;
+    margin: 0em;
+    padding-left: 1em;
+}
+.nike__desplegable-member{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5em;
+}
+.nike__desplegable-memberp{
+    color: #757575;
+    font-size: 1.3em;
+    font-weight: 400;
+    width: 95%;
+    line-height: 1.15em;
+}
+.nike__desplegable-unete{
+    background-color: black;
+    color: white;
+    border: 0px;
+    border-radius: 2em;
+    padding: 0.5em 1.25em;
+    font-size: 1em;
+    margin-top: 1.5em;
+    cursor: pointer;
+}
+.nike__desplegable-inicia{
+    background-color: white;
+    color: black;
+    border: 1px solid #b9b9b9;
+    border-radius: 2em;
+    padding: 0.5em 1.25em;
+    font-size: 1em;
+    margin-top: 0.75em;
+    cursor: pointer;
+}
+.nike__submenu{
+    overflow: hidden;
+    width: 0em;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transition: all 0.25s ease;
+}
+.nike__submenu-wrapper{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items:flex-start;
+}
+.nike__submenu-desplegable{
+    overflow: hidden;
+    width: 0em;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transition: all 0.25s ease;
+    
+    &.activo{
+        overflow: visible;
+        width: 35%;
+    }
+}
+.nike__submenu-todo{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+}
+.nike__submenu-p{
+    font-size: 1em;
+    padding-right: 1em;
+}
+.nike__submenu-ul{
+    padding: 0;
+    font-size: 1.5em;
+}
+.nike__submenu-li{
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0.5em;
+    color: #757575;
+    cursor: pointer;
+}
+.nike__header3{
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+.nike__header3-p{
+    font-size: 1em;
+}
+.nike__header3-a{
+    cursor: pointer;
+    font-size: 0.8em;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+}
+.nike__airmax{
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.nike__airmax-img{
+    width: 100%;
+}
+.nike__airmax-p{
+    padding-top: 2em;
+    margin: 0em;
+}
+.nike__airmax-h2{
+    margin: 0em;
+    font-size: 3em;
+    letter-spacing: -4px;
+    font-family: Nike;
+}
+.nike__airmax-p1{}
+.nike__airmax-buttons{}
+.nike__airmax-boton{
+    font-size: 1em;
+    padding: 0.6em 1.5em;
+    background-color: black;
+    color: white;
+    border-radius:40em;
+    border: 0px;
+    cursor: pointer;
+    margin-right: 0.5em;
+}
+.nike__equipate{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 4em;
+}
+.nike__equipate-superior{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nike__equipate-h3{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.nike__equipate-flechas{}
+.nike__equipate-flechaanterior{
+    border-radius: 100%;
+    border: 0px;
+    padding: 1.5em;
+    margin: 0.5em;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.5s ease;
+    &:hover{
+        background-color: #cccccc;
+    }
+}
+.nike__equipate-flechasiguiente{
+    border-radius: 100%;
+    border: 0px;
+    padding: 1.5em;
+    margin: 0.5em;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.5s ease;
+    &:hover{
+        background-color: #cccccc;
+    }
+}
+.nike__equipate-inferior{
+    transition: 2s;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+.nike__equipate-div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+}
+.nike__equipate-contenedorimg{
+    height: 100%;
+    margin: 0 0.5em;
+    transition: .5s;
+    cursor: pointer;
+}
+.nike__equipate-img{
+    max-height: 64vh;
+    object-fit: cover;
+    transition: all 1s ease;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+.nike__primavera{
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: left;
+}
+.nike__primavera-h3{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.nike__primavera-total{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.nike__primavera-cuadrado{
+    width: 50%;
+    cursor: pointer;
+    position: relative;
+    &:first-child{
+        padding-right: 0.8em;
+    }
+}
+.nike__primavera-img{
+    width: 100%;
+}
+.nike__primavera-texto{
+    position: absolute;
+    bottom: 0;
+    padding: 3em;
+}
+.nike__primavera-p{
+    color: white;
+    padding-bottom: 1.8em;
+    font-weight: 500;
+}
+.nike__primavera-button{
+    background-color: white;
+    border: 0px;
+    border-radius:40em;
+    font-size: 1em;
+    padding: 0.6em 1.5em;
+    cursor: pointer;
+}
+.nike__tendencias{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 4em;
+}
+.nike__tendencias-superior{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nike__tendencias-h3{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.nike__tendencias-flechas{}
+.nike__tendencias-flechaanterior{
+    border-radius: 100%;
+    border: 0px;
+    padding: 1.5em;
+    margin: 0.5em;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.5s ease;
+    &:hover{
+        background-color: #cccccc;
+    }
+}
+.nike__tendencias-flechasiguiente{
+    border-radius: 100%;
+    border: 0px;
+    padding: 1.5em;
+    margin: 0.5em;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.5s ease;
+    &:hover{
+        background-color: #cccccc;
+    }
+}
+.nike__tendencias-inferior{
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 2s;
+    overflow: hidden;
+}
+.nike__tendencias-div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+}
+.nike__tendencias-contenedorimg{
+    height: 100%;
+    margin: 0 0.5em;
+    transition: .5s;
+    cursor: pointer;
+}
+.nike__tendencias-img{
+    max-height: 64vh;
+    object-fit: cover;
+    transition: all 1s ease;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+.nike__atleta{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.nike__atleta-h3{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.nike__atleta-img{
+    width: 100%;
+}
+.nike__atleta-texto{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.nike__atleta-p{
+    padding-top: 2em;
+    margin-bottom: 0;
+}
+.nike__atleta-h2{
+    margin: 0em;
+    font-size: 3em;
+    letter-spacing: -3px;
+    line-height: 1.1em;
+    font-family: Nike;
+    text-align: center;
+}
+.nike__atleta-boton{
+    margin-top: 1em;
+    font-size: 1em;
+    padding: 0.6em 1.5em;
+    background-color: black;
+    color: white;
+    border-radius:40em;
+    border: 0px;
+    cursor: pointer;
+    margin-right: 0.5em;
+}
+.nike__aplicaciones{
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: left;
+}
+.nike__aplicaciones-h3{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.nike__aplicaciones-total{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.nike__aplicaciones-cuadrado{
+    width: 50%;
+    cursor: pointer;
+    position: relative;
+    &:first-child{
+        padding-right: 0.8em;
+    }
+}
+.nike__aplicaciones-img{
+    width: 100%;
+}
+.nike__aplicaciones-texto{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3em;
+}
+.nike__aplicaciones-p{
+    color: white;
+    padding-bottom: 1.8em;
+    font-weight: 500;
+}
+.nike__aplicaciones-button{
+    background-color: white;
+    border: 0px;
+    border-radius:40em;
+    font-size: 1em;
+    padding: 0.6em 1.5em;
+    cursor: pointer;
+}
+.nike__unete{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 3em;
+}
+.nike__unete-h3{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.nike__unete-total{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nike__unete-img{
+    width: 100%;
+    min-height: 20vh;
+}
+.nike__unete-texto{
+    position: absolute;
+    padding-left: 2em;
+}
+.nike__unete-h2{
+    margin: 0em;
+    font-size: 3em;
+    letter-spacing: -3px;
+    line-height: 1.1em;
+    font-family: Nike;
+    color: white;
+}
+.nike__unete-p{
+    font-size: 1.25em;
+    font-weight: 400;
+    color: white;
+}
+.nike__unete-button{
+    background-color: white;
+    border: 0px;
+    border-radius:40em;
+    font-size: 1em;
+    padding: 0.5em 1.25em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+.nike__masnike{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 9em;
+    padding-top: 3em;
+}
+.nike__masnike-h3{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.nike__masnike-total{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.nike__masnike-cuadrado{
+    width: calc(100%/3);
+    cursor: pointer;
+    position: relative;
+    &:nth-child(1){
+        padding-right: 0.8em;
+    }
+    &:nth-child(2){
+        padding-right: 0.8em;
+    }
+}
+.nike__masnike-img{
+    width: 100%;
+}
+.nike__masnike-texto{
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+.nike__masnike-button{
+    background-color: white;
+    border: 0px;
+    border-radius:40em;
+    font-size: 1em;
+    padding: 0.6em 1.5em;
+    cursor: pointer;
+    margin: 3em;
+}
+.nike__categorias{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.nike__categorias-lista{
+    max-height: 20vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    &:hover{
+        max-height:fit-content;
+        overflow: visible;
+    }
+}
+.nike__categorias-ul{
+}
+.nike__categorias-li{
+    list-style: none;
+    cursor: pointer;
+    margin: 1em 1em 1em 0;
+    color: #757575;
+    transition: all 0.5s ease;
+    &:hover{
+        color: black;
+    }
+}
+.nike__footer{
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 5em;
+    min-height: 40vh;
+    background-color: #111;
+}
+.nike__footer-lista{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2em;
+}
+.nike__footer-div{}
+.nike__footer-ul{
+    color: white;
+    font-size: 0.7em;
+    cursor: pointer;
+    padding: 0.5em;
+    padding-right: 4em;
+    font-weight: bolder;
+}
+.nike__footer-li{
+    color: #757575;
+    list-style: none;
+    font-size: 1.1em;
+    margin: 1em 1em 1em 0;
+    cursor: pointer;
+    &:hover{
+        color: white;
+    }
+}
+.nike__footer-diviconos{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10em;
+}
+.nike__footer-img{
+    max-height: 1.5em;
+    background-color: #757575;
+    margin: 0.5em;
+    padding: 0.2em;
+    border-radius: 50%;
+    transition: all 0.25s ease;
+    &:hover{
+        background-color: white;
+    }
+}
+@media(max-width:1200px){
+    .nike__airmax-p1{
+        width: 80%;
+    }
+}
+@media(max-width:1000px){
+    .nike__primavera-texto{
+        padding: 1.5em;
+    }
+    .nike__atleta-h2{
+        width: 80%;
+    }
+    .nike__aplicaciones-texto{
+        padding: 1.5em;
+    }
+    .nike__unete-img{
+        min-height: 30vh;
+    }
+    .nike__masnike-button{
+        margin: 1.5em;
+    }
+    .nike__footer-diviconos{
+        padding-left: 5em;
+    }
+}
+@media(max-width:900px){
+    .nike__header1{
+        display: none;
+    }
+    .nike__header2-ul{
+        display: none;
+    }
+    .nike__bolsa-logo{
+        padding: 0.75em;
+    }
+    .nike__nike-logo{
+        padding: 1em;
+    }
+    .nike__corazon-logo{
+        display: none;
+    }
+    .nike__menu-logo{
+        display: block;
+    }
+    .nike__header3-p{
+        margin: 0.25em;
+    }
+    .nike__primavera-img{
+        min-height: 50vh;
+        object-fit: cover;
+    }
+    .nike__primavera-p{
+        padding-bottom: 0.75em;
+    }
+    .nike__aplicaciones-img{
+        min-height: 50vh;
+        object-fit: cover;
+    }
+    .nike__categorias-ul{
+        font-size: 0.8em;
+    }
+    .nike__footer-lista{
+        width: 80%;
+    }
+    .nike__footer-ul{
+        padding-right: 1.5em;
+    }
+    .nike__footer-diviconos{
+        padding-left: 2.5em;
+    }
+}
+@media(max-width:750px){
+    .nike__menu-desplegable{
+        &.activo{
+            width: 50%;
+        }
+    }
+    .nike__submenu-desplegable{
+        &.activo{
+            width: 50%;
+        }
+    }
+    .nike__unete-img{
+        object-fit: cover;
+    }
+    .nike__footer-diviconos{
+        flex-flow: column nowrap;
+    }
+    .nike__equipate-flechas{
+        display: none;
+    }
+    .nike__equipate-div{
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+    .nike__equipate-div::-webkit-scrollbar{
+        height: 0.75em;
+        width: 0.5em;
+        border-radius: 10px;
+    }
+    .nike__equipate-div::-webkit-scrollbar-track{
+        background: #858080;
+        border-radius: 10px;
+    }
+    .nike__equipate-div::-webkit-scrollbar-thumb{
+        background-color: #d6d6d6;
+        border-radius: 10px;
+        border: 0px none #3d3d3d;
+    }
+    .nike__equipate-img{
+        &:hover{
+            transform: scale(1);
+        }
+    }
+    .nike__tendencias-flechas{
+        display: none;
+    }
+    .nike__tendencias-div{
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+    .nike__tendencias-div::-webkit-scrollbar{
+        height: 0.75em;
+        width: 0.5em;
+        border-radius: 10px;
+    }
+    .nike__tendencias-div::-webkit-scrollbar-track{
+        background: #858080;
+        border-radius: 10px;
+    }
+    .nike__tendencias-div::-webkit-scrollbar-thumb{
+        background-color: #d6d6d6;
+        border-radius: 10px;
+        border: 0px none #3d3d3d;
+    }
+    .nike__tendencias-img{
+        &:hover{
+            transform: scale(1);
+        }
+    }
+}
+@media(max-width:600px){
+    .nike__menu-desplegable{
+        &.activo{
+            width: 60%;
+        }
+    }
+    .nike__submenu-desplegable{
+        &.activo{
+            width: 60%;
+        }
+    }
+    .nike__primavera-p{
+        padding-bottom: 0em;
+    }
+    .nike__masnike{
+        padding-bottom: 4em;
+    }
+    .nike__footer-diviconos{
+        padding-left: 0em;
+    }
+    .nike__footer-ul{
+        padding-right: 0.5em;
+    }
+}
+@media(max-width:600px){
+    .nike__primavera-total{
+        flex-flow: column nowrap;
+    }
+    .nike__primavera-cuadrado{
+        width: 100%;
+        &:first-child{
+            padding-right: 0em;
+        }
+    }
+    .nike__aplicaciones-total{
+        flex-flow: column nowrap;
+    }
+    .nike__aplicaciones-cuadrado{
+        width: 100%;
+        &:first-child{
+            padding-right: 0em;
+        }
+    }
+    .nike__masnike-total{
+        flex-flow: column nowrap;
+    }
+    .nike__masnike-cuadrado{
+        width: 100%;
+    }
+    .nike__masnike-cuadrado:nth-child(1){
+        padding-right: 0em;
+    }
+    .nike__masnike-cuadrado:nth-child(2){
+        padding-right: 0em;
+    }
+    .nike__categorias-lista{
+        max-height:fit-content;
+        overflow: visible;
+    }
+    .nike__footer{
+        margin-top: 2em;
+    }
+    .nike__footer-lista{
+        flex-flow: column nowrap;
+    }
+    .nike__footer-diviconos{
+        flex-flow: row nowrap;
+    }
+}
+@media(max-width:600px){
+    .nike__menu-desplegable{
+        &.activo{
+            width: 70%;
+        }
+    }
+    .nike__submenu-desplegable{
+        &.activo{
+            width: 70%;
+        }
+    } 
+}
